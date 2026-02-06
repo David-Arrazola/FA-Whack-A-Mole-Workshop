@@ -3,10 +3,11 @@ import { Moles } from "./Moles";
 export function GameScreen() {
   const { score, toggleStart } = useGame();
   return (
-    <section>
-      <h2>GAME SCREEN</h2>
-      <button onClick={toggleStart}>Restart</button>
-      <h2>Score: {score}</h2>
+    <section id="gameScreen">
+      <section id="buttonAndScore">
+        <button onClick={toggleStart}>Restart</button>
+        <h2>Score: {score}</h2>
+      </section>
       <section>
         <Moles />
       </section>
